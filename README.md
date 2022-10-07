@@ -1,37 +1,19 @@
 # JAVA AND SPRINGBOOT COMPENDIUM  
 
 
+[jump to javaSetup](#JAVA-SETUP)
 
 
-# JAVA BASICS
-
-## Setting up Java on Mac
-     
-1. Go to Maven site, download .tgz binary (top) and extract to `/Application`  
-2. **Install Java JDK** via oracle - requires a lot of digging through the sight, as standard is only to include JRE.
-3. Set the following environment variables:  
-```shell
-export JAVA_HOME=$(/usr/libexec/java_home)
-export M2_HOME=/Applications/apache-maven-3.8.6
-export PATH=$PATH:$M2_HOME/bin
-```
 
   
-- Avoid `brew install java` and `brew install maven`  
-  - This is because home isn't properly set, java doesn't include JDK etc.  
+# SPRINGBOOT NOTES 
 
+**SPRING**: It aims to simplify Java EE development that makes developers more productive.  
+**SPRINGBOOT**: It aims to shorten the code length and provide the easiest way to develop Web Applications.
 
+  
 
-# USEFUL LINKS
-
-https://spring.io/guides/gs/maven/#scratch  
-https://spring.io/guides/gs/maven/  
-
-
-
-
-
-## INTERFACES & ABSTRACTIONS WITH EXAMPLE
+# INTERFACES & ABSTRACTIONS WITH EXAMPLE
 
 Lets assume we have set up an bird class, animal class and now define the zoo class which instantiates the objects. 
 
@@ -132,3 +114,29 @@ public interface Flyable{
 ```
 
 
+
+
+
+# JAVA SETUP
+
+## Setting up Java on Mac
+     
+1. Go to Maven site, download .tgz binary (top) and extract to `/Application`  
+2. **Install Java JDK** via oracle - requires a lot of digging through the sight, as standard is only to include JRE.
+3. Set the following environment variables:  
+```shell
+export JAVA_HOME=$(/usr/libexec/java_home)
+export M2_HOME=/Applications/apache-maven-3.8.6
+export PATH=$PATH:$M2_HOME/bin
+```
+
+  
+- Avoid `brew install java` and `brew install maven`  
+  - This is because home isn't properly set, java doesn't include JDK etc.  
+
+
+
+# USEFUL LINKS
+
+https://spring.io/guides/gs/maven/#scratch  
+https://spring.io/guides/gs/maven/  
