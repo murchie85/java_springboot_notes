@@ -1,17 +1,41 @@
 # JAVA AND SPRINGBOOT COMPENDIUM  
 
 
-[jump to javaSetup](#JAVA-SETUP)
-
-
+- [jump to javaSetup](#JAVA-SETUP)
+- [jump to JAVA NOTES](#JAVA-NOTES)  
 
   
 # SPRINGBOOT NOTES 
 
-**SPRING**: It aims to simplify Java EE development that makes developers more productive.  
-**SPRINGBOOT**: It aims to shorten the code length and provide the easiest way to develop Web Applications.
-
+|  **SPRING**  |  **SPRINGBOOT**  |
+|----|----|
+| It aims to simplify Java EE development that makes developers more productive.| It aims to shorten the code length and provide the easiest way to develop Web Applications.|
+| The primary feature of the Spring Framework is dependency injection.| The primary feature of Spring Boot is Autoconfiguration. It automatically configures the classes based on the requirement.|
+| To test the Spring project, we need to set up the sever explicitly.|Spring Boot offers embedded server such as Jetty and Tomcat, etc. |
   
+
+
+|  **SPRING Boot**  |  **Spring MVC**  |
+|----|----|
+| Spring Boot is a module of Spring for packaging the Spring-based application with sensible defaults.| Spring MVC is a model view controller-based web framework under the Spring framework.|
+| There is no requirement for a deployment descriptor. |	A Deployment descriptor is required.|  
+    
+## Spring Boot Architecture  
+
+![](https://static.javatpoint.com/springboot/images/spring-boot-architecture.png)
+  
+  
+![](https://static.javatpoint.com/springboot/images/spring-boot-architecture2.png)    
+
+- Ensure validator classes, view classes, and utility classes.
+- Creates a data access layer and performs CRUD operation.
+- The client makes the HTTP requests (PUT or GET).
+- The request goes to the controller, and the controller maps that request and handles it. After that, it calls the service logic if required.
+- In the service layer, all the business logic performs. It performs the logic on the data that is mapped to JPA with model classes.
+- A JSP page is returned to the user if no error occurred.
+
+# JAVA NOTES 
+
 
 # INTERFACES & ABSTRACTIONS WITH EXAMPLE
 
